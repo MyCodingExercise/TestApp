@@ -1,0 +1,11 @@
+<form [formGroup]="personForm" (ngSubmit)="submitPersonDetails()" class="form-person">
+  <h1 class="h3 mb-3 font-weight-normal">Please provide</h1>
+
+  <label for="firstName" class="sr-only">First Name</label>
+  <input type="text" formControlName="firstName" class="form-control" placeholder="First name" required autofocus>
+
+  <label for="lastName" class="sr-only">Last Name</label>
+  <input type="text" formControlName="lastName" class="form-control" placeholder="Last name" required>
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+</form>
